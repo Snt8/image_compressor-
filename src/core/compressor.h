@@ -1,0 +1,8 @@
+//
+// Created by sntav on 18/07/2026.
+//
+
+#ifndef IMAGE_COMPRESSOR_COMPRESSOR_H
+#define IMAGE_COMPRESSOR_COMPRESSOR_H
+
+#endif //IMAGE_COMPRESSOR_COMPRESSOR_H
