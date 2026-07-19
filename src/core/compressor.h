@@ -1,8 +1,11 @@
-//
-// Created by sntav on 18/07/2026.
-//
+#pragma once
+#include <stdbool.h>
 
-#ifndef IMAGE_COMPRESSOR_COMPRESSOR_H
-#define IMAGE_COMPRESSOR_COMPRESSOR_H
+#ifdef __cplusplus
+extern "C" {
+#endif
+    bool compress_image(const char* image_path, int quality);
 
-#endif //IMAGE_COMPRESSOR_COMPRESSOR_H
+#ifdef __cplusplus
+}
+#endif
