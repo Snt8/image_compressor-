@@ -1,17 +1,20 @@
-#include "../core/compressor.h"
 #include "../processor/image_processor.hpp"
 #include <string>
 #include <iostream>
 
 int main() {
-    std::string image = "../src/tests/images/new_york_test_image.jpg";
-    int quality = 50;
+    ImageProcessor image_processor;
+    std::string images_directory = "../src/tests/images";
+    int quality = 100;
 
-    if (compress_image(image.c_str(), quality)) {
-        std::cout << "The image was compressed successful";
+    std::cout << "starting image compression test" << std::endl;
+
+    if (image_processor.process_directory(images_directory, quality)) {
+        std::cout << "every image compressed successful" << std::endl;
     }
-
     else {
-        std::cout << "Error compressing the image";
+        std::cout << "something has been wrong" << std::endl;
     }
+
+    return 0;
 }
